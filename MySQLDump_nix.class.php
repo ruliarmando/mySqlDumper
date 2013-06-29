@@ -16,7 +16,7 @@ class MySQLDump_nix extends MySQLDump{
             $this->cmd = 'mysqldump -u'.$dbUser.' -p'.$dbPass.' '.$dbName.' | '.$zip_util[$zip].' > '.$dest.'/'.$fname;
         }else{
             $fname = $dbName.'.'.date('W').'.sql';
-            $this->cmd = 'mysqldump -u '.$dbUser.' -p '.$dbPass.' '.$dbName.' | '.$zip_util[$zip].' > '.$dest.'/'.$fname;
+            $this->cmd = 'mysqldump -u'.$dbUser.' -p'.$dbPass.' '.$dbName.' | '.$zip_util[$zip].' > '.$dest.'/'.$fname;
         }
     }
 }
